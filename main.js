@@ -2,7 +2,7 @@ const html = document.documentElement;
 const canvas = document.querySelector('.flipbook');
 const context = canvas.getContext("2d");
 
-const frameCount = 36;
+const frameCount = 37;
 
 const currentFrame = index => (
   `./img/${index.toString().padStart(2, '0')}.jpg`
@@ -17,8 +17,8 @@ const preloadImages = () => {
 
 const img = new Image()
 img.src = currentFrame(1);
-canvas.width=810;
-canvas.height=540;
+canvas.width=1920;
+canvas.height=1280;
 img.onload=function(){
   context.drawImage(img, 0, 0);
 }
