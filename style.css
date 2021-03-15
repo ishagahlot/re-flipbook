@@ -2,6 +2,10 @@ html {
   height: 100vh;
 }
 
+html::-webkit-scrollbar {
+    display : none
+}
+
 body {
   height: 500vh;
   background: #000;
